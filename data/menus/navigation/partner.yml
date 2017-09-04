@@ -1,0 +1,25 @@
+-
+  name: 'Home'
+  link: partner/index
+-
+  name: 'Orders'
+  0: { name: 'Pending', link: partner/pending, description: 'This section contains packages that have been paid for but you have not yet delivered them' }
+  1: { name: 'Delivered', link: partner/delivered, description: 'This section contains packages that you have delivered and confirmed as delivered this section can also be used as history to track previous shippments that you been completed' }
+-
+  name: 'Settings'
+  0: { name: 'Address', link: partner/address, description: 'Allows you to edit your corporation address, country province or state' }
+  1: { name: 'Partner details', link: partner/details, description: 'This section allows you to edit your company name, as well as login and notification information'}
+  2: { name: 'Availability', link: partner/availability, description: 'You may choose your interface to be temporarily unavialable for deliveries, in case you are updating, some of your pricing strategies or just have a busy day and dont want to be searched' }
+  3: { name: 'Service levels', link: partner/service_levels, description: 'In this section you can specify service levels your company supports, say 1 hour, and 2 hour delivery, and overnight, delivery are all types of services your company may support' }
+  4: { name: 'Surcharges', link: partner/surcharges, description: 'Allows you to customize your gas and weight surcharges, these will be included in the total final price a customer pays for a deliery' }
+  5: { name: 'Discounts', link: partner/discounts, description: 'Allows you to set the temporary discount in percentage for all packages, in case you have a slow day' }
+#  name: 'Zones'
+#  0: { name: 'Price level names', link: partner/price_level }
+#  1: { name: 'Edit zones', link: partner/zone_elements }
+#  2: { name: 'Zone elements', link: partner/zone_elements }
+#  3: { name: 'Zone prices', link: partner/zone_prices }
+#  4: { name: 'Weight prices', link: partner/weight_prices }
+-
+  name: 'Contact Us'
+  0: { name: 'Have a question?', link: form/enquiry, description: 'Do you have a question ? Our staff will be more then happy to answer it' }
+  1: { name: 'Site feedback', link: form/feedback, description: 'Do you have anything to say or comment on the site or company in generatl ? this is a place to do it'}

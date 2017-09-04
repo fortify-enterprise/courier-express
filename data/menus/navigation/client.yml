@@ -1,0 +1,22 @@
+-
+  name: 'Home'
+  link: client/index
+-
+  name: 'Orders'
+  0: { name: 'Pending', link: client/pending, description: 'This section contains packages that have been paid for but have not yet been delivered' }
+  1: { name: 'History', link: client/delivered, description: 'This section contains packages that have been delivered and confirmed as delivered  by the courier company, this section can also be used as history to track previous shippments that have been made' }
+-
+  name: 'Packages'
+  0: { name: 'New package', link: main_page/index, description: 'Send a new package choosing from a selection of options and desctinations' }
+  1: { name: 'Shopping cart', link: cart/index, description: 'Look through your shopping cart. This is a place where all your current added packages are available for view and editing' }
+  2: { name: 'Checkout', link: checkout/index, description: 'This is the final stage of shipign a package, notification will be sent to a courier once you make your payment' }
+-
+  name: 'Settings'
+  0: { name: 'Address', link: client/address, description: 'This section allows you to edit your address, this information is used to prefill your address for the subsequent packages you ship, so that you dont have to fill it in every time'}
+  1: { name: 'Client details', link: client/details, description: 'Allows you to customize your login credentials such as password and login email address This section also allows you to edit your notification email, used for notifying you you parcel status has changes or when you need to recover your login password' }
+  2: { name: 'Payment details', link: client/payment, description: 'Allows you to customize your payment details, and set credit card information for payment details  used in ordering packages' }
+-
+  name: 'Contact Us'
+  0: { name: 'Have a question?', link: form/enquiry, description: 'Do you have a question ? Our staff will be more then happy to answer it' }
+  1: { name: 'Site feedback', link: form/feedback, description: 'Do you have anything to say or comment on the site or company in generatl ? this is a place to do it' }
+  2: { name: 'Partnership request', link: form/partner_contact, description: 'Do you want or know someone who is interested in becoming a partner of Courier Express, please drop us a line and our friendly staff will get in touch with you' }

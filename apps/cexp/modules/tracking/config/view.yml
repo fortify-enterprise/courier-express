@@ -1,0 +1,6 @@
+all:
+  stylesheets:
+    - tracking/tracking.css
+
+  javascripts:
+    - tracking/tracking.js

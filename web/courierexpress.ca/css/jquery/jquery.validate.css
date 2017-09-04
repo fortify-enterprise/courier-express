@@ -1,0 +1,31 @@
+#field
+{
+  /* margin-left: .5em; float: left;*/
+}
+
+#field, label
+{
+ /*  float: left; font-family: Arial, Helvetica, sans-serif; font-size: small; */
+}
+
+
+input { border: 1px solid black; }
+
+input.error, select.error, form.cmxform textarea.error,
+form.cmxform select.error, form.cmxform fieldset input.error
+{
+	border: 1px solid #993333;
+ 	background-color: #F6E3CE;
+}
+
+label.error {
+/*		background: url('http://dev.jquery.com/view/trunk/plugins/validate/demo/images/unchecked.gif') no-repeat;
+*/
+}
+
+label.valid {
+	background-color: #81F781;
+/*		background: url('http://dev.jquery.com/view/trunk/plugins/validate/demo/images/checked.gif') no-repeat;
+		display: block;
+*/
+}

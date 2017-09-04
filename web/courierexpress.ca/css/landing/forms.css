@@ -1,0 +1,113 @@
+form.cmxform {
+  color: #333333;
+}
+
+form.cmxform input, form.cmxform textarea, form.cmxform select {
+  text-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#FFFFFF none repeat scroll 0 0;
+	border:1px solid #CCCCCC;
+	color:#936334;
+	margin:0;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+	width:70%;
+}
+
+form.cmxform select
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+form.cmxform fieldset {
+  margin-bottom: 10px;
+  border: none;
+}
+legend {
+  padding: 5px 5px 5px 5px;
+	color: #ffffff;
+	background-color: #936334;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-bottomright: 15px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+	font-size: 12px;
+}
+legend.edit_package, li.edit_package, ol.login_info, div.credit_card_info, div.tracking_header {
+  background-color: #F5D0A9;
+	color: #000000;
+	border: 1px solid #000000;
+}
+
+div.credit_card_info, div.tracking_header, ol.login_info {
+  border: 1px solid #936334;
+	float: left;
+	width: 500px;
+	padding: 15px;
+}
+
+form.cmxform label, form.cmxform textarea {
+  display: inline-block;
+  line-height: 1.8;
+	color: #333333;
+  text-shadow:0 2px 5px rgba(0, 0, 0, 0.2);
+}
+form.cmxform fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+form.cmxform fieldset li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+	font-size: 12px;
+}
+form.cmxform fieldset fieldset {
+  border: none;
+  margin: 3px 0 0;
+}
+form.cmxform fieldset fieldset legend {
+  padding: 0 0 5px;
+  font-weight: normal;
+}
+form.cmxform fieldset fieldset label {
+  display: block;
+  width: auto;
+}
+form.cmxform em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+form.cmxform fieldset fieldset label {
+  margin-left: 140px; /* Width plus 3 (html space) */
+}
+
+div.horizontal_form_row > label, div.horizontal_form_row > a {
+	width: 140px;
+	vertical-align: top;
+}
+
+div.horizontal_form_row > ul.error_list {
+	margin-left: 140px;
+}
+
+div.vertical_form_row {
+	/*padding-left: 0px;*/
+	padding: 3px;
+}
+
+
+div.form_row_error  {
+  background-color: #FFD5CD;
+}
+
+li.default_package {
+  background-color: #ebebeb; 
+}
+

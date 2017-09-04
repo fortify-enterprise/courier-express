@@ -1,0 +1,11 @@
+-
+  name: 'Edit properties'
+  link: admin/index
+-
+  name: 'Edit partners'
+  link: admin/edit_partners
+-
+  name: 'Reports'
+  0: { name: 'Failed delivery attempts', link: admin/failed_attempts, description: 'Report failed deliveries' }
+  1: { name: 'Completed deliveries', link: admin/deliveries, description: 'Completed deliveries' }
+  2: { name: 'Who accessed site', link: admin/who_accessed, description: 'Who accessed the website' }

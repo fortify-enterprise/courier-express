@@ -1,0 +1,247 @@
+body
+{
+	font-family: "Lucida Grande","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+	font-size: 100%;
+}
+
+
+#wrap {
+  /*position: relative;*/
+  width: auto;
+  margin: 0 auto; /* proper centering */
+  /*background: #333333; url('/images/background.png')  repeat-x;*/
+	background-color: #993333;
+  border: 1px solid #333333;
+  /*background-color: #848484;*/
+	height: 1280px;
+}
+
+
+#header {
+	text-align: center;
+}
+
+
+#left {
+	width: 20%;
+	float: left;
+}
+
+#right {
+	width: 25em;
+	float: left;
+}
+
+#content {
+	float: left;
+	text-align: left;
+/*	width: 65em;*/
+}
+
+#mid_content {
+	width: 100%;
+}
+
+#footer {
+	clear: both;
+	text-align: center;
+}
+
+
+/*span.menu, a {
+	color: #ffffff;
+ 	text-decoration: none;
+	color:#ccccff;
+}*/
+
+/*
+span.main_menu a {
+	font-size:  small;
+	color:#333333;
+}
+*/
+span.footer_menu {
+	font-size: smaller;
+}
+
+
+/* colors and uppercase for */
+.white_text, li label, fieldset legend {
+ 	/*text-transform: uppercase;*/
+	font-size: 12px;
+	color: #936334;
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.white_reg_text {
+	font-size: smaller;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+
+/* form styles */
+/*
+form.cmxform fieldset {
+  margin-bottom: 10px;
+  border: none;
+}
+form.cmxform legend {
+  padding: 0 2px;
+  font-weight: bold;
+}
+form.cmxform label {
+  display: inline-block;
+  line-height: 1.8;
+  vertical-align: top;
+}
+form.cmxform fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+fieldset li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+fieldset ol li {
+  color: #A4A4A4;
+  margin-bottom: 5px;
+}
+
+fieldset legend {
+  margin-bottom: 15px;
+}
+
+fieldset ul.error_list li {
+  color: #F5D0A9;
+}
+
+
+fieldset ol li input, fieldset ol li textarea, fieldset ol li select {
+
+}
+
+
+form.cmxform fieldset fieldset {
+  border: none;
+  margin: 3px 0 0;
+}
+form.cmxform fieldset fieldset legend {
+  padding: 0 0 5px;
+  font-weight: normal;
+}
+form.cmxform fieldset fieldset label {
+  display: block;
+  width: auto;
+}
+form.cmxform em
+{
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+form.cmxform fieldset fieldset label {
+  margin-left: 123px;
+}
+form.cmxform textarea, form.cmxform select, form.cmxform fieldset input text {
+	font-weight: bold;
+	background-color: #E6E4C9;
+	background: #E6E4C9;
+}
+
+form select, form fieldset input, input checkbox {
+	background-color: #E6E4C9;
+	background: #E6E4C9;
+}
+*/
+
+
+/* error classes */
+
+.highlight {
+	color: #CCCCFF;
+	font-weight: bold;
+}
+
+
+/* price table colors */
+
+table.cmxtable td {
+	border-width: 5px;
+	border-color: #CCC; /*#663333; = mine #CCC*/
+	padding: 5px;
+}
+
+table.cmxtable thead {
+  text-transform: uppercase;
+}
+
+input[type=text], input[type=password]{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	/*height: 1.5em;*/
+}
+
+
+
+
+/* rounded div */
+div.rounded_div {
+	background-color: #F5F6CE;/* 660000 - marks */ /* #4B8A08 my */
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+   border: 5px solid #999999;
+   padding: 10px;
+   margin-bottom: 1.5em;
+}
+
+
+/* price table colors */
+
+table.cmxtable td
+{
+	border-color: #663333; /*#663333; = mine #CCC*/
+}
+
+input, textarea, select
+{
+/*  border:2px solid #460505;*/
+  -moz-border-radius: 3px;
+}
+
+
+.tip {
+	color: #333333;/*#F5D0A9;*/
+}
+
+table.infotable {
+  font-weight: bold;
+	color:#333333;
+}
+
+table.infotable td {
+  padding: 5px;
+}
+
+
+
+table.infotable caption {
+  color: #A4A4A4;
+	color:#CCCCFF;
+	font-size:smaller;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+table.infotable tr th {
+  color: #A4A4A4;
+  padding-right: 50PX;
+  text-transform:uppercase;
+  font-size:smaller;
+}
+

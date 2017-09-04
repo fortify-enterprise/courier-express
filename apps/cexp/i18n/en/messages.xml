@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="en" datatype="plaintext" original="messages" date="2009-12-18T00:15:17Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>type of delivery</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>service</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>ready date</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>ready time</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>expected delivery</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Pickup At</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>deliver to</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>delivery details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>delivery_type_tip</source>
+        <target>Type of deliveries available, prepaid delivery - includes regular type of delivery where pickup occurs
+				at your location and delivered to somebody else
+				collect delivery - pickup occurs at somebody elses location, and
+				gets delivered to your place
+				third party delivery - you pay to deliver a package picked up from
+				a third party and deliver to a third party
+				</target>
+      </trans-unit>
+      <trans-unit>
+        <source>service_tip</source>
+        <target>Service level of your delivery</target>
+      </trans-unit>
+      <trans-unit>
+        <source>ready_date_tip</source>
+        <target>What date will the package be ready to be picked up</target>
+      </trans-unit>
+      <trans-unit>
+        <source>ready_time_tip</source>
+        <target>What time will the package be ready to be picked up</target>
+      </trans-unit>
+      <trans-unit>
+        <source>delivered_by_tip</source>
+        <target>Best attempt to guess when will package be delivered, Estimated on the service level chosen</target>
+      </trans-unit>
+      <trans-unit>
+        <source>full name or company</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_name_tip</source>
+        <target>Name of the company / individual sending package</target>
+      </trans-unit>
+      <trans-unit>
+        <source>apt unit</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_apt_unit_tip</source>
+        <target>Apartment unit where packege will be picked up</target>
+      </trans-unit>
+      <trans-unit>
+        <source>number</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_street_number_tip</source>
+        <target>Street number where packege will be picked up</target>
+      </trans-unit>
+      <trans-unit>
+        <source>street name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_street_name_tip</source>
+        <target>Street name where packege will be picked up</target>
+      </trans-unit>
+      <trans-unit>
+        <source>postal / zip code</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_postal_code_tip</source>
+        <target>Postal code / zip code where packege will be picked up</target>
+      </trans-unit>
+      <trans-unit>
+        <source>country</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_country_tip</source>
+        <target>Sender country</target>
+      </trans-unit>
+      <trans-unit>
+        <source>city</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_city_tip</source>
+        <target>Sender city</target>
+      </trans-unit>
+      <trans-unit>
+        <source>province / state</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_state_province_tip</source>
+        <target>Sender province or state</target>
+      </trans-unit>
+      <trans-unit>
+        <source>sender contact</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_contact_tip</source>
+        <target>Contact person to reach reagarding sending of the package</target>
+      </trans-unit>
+      <trans-unit>
+        <source>sender phone</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>sender_phone_tip</source>
+        <target>Phone number of sender</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_name_tip</source>
+        <target>Name of the recepient of the package</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_apt_unit_tip</source>
+        <target>Apartment unit of the recepient of the package</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_street_number_tip</source>
+        <target>Street number of the recepient of the package</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_street_name_tip</source>
+        <target>Street name of the recepient of the package</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_postal_code_tip</source>
+        <target>Postal or zip code of the recepient of the package</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_country_tip</source>
+        <target>Recepient's country</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_city_tip</source>
+        <target>Recepient's city</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_state_province_tip</source>
+        <target>Recepient's state or province</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recepient contact</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_contact_tip</source>
+        <target>Contact person on the recepient end</target>
+      </trans-unit>
+      <trans-unit>
+        <source>recepient phone</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>recep_phone_tip</source>
+        <target>Recepient's phone number</target>
+      </trans-unit>
+      <trans-unit>
+        <source>package type</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>package_type_tip</source>
+        <target>Type of the package being sent</target>
+      </trans-unit>
+      <trans-unit>
+        <source>total weight in pounds (lb)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>weight_tip</source>
+        <target>Total weight of the package</target>
+      </trans-unit>
+      <trans-unit>
+        <source># of pieces</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>num_pieces_tip</source>
+        <target>Number of pieces as part of this package</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reference</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>reference_tip</source>
+        <target>Recepient's name</target>
+      </trans-unit>
+      <trans-unit>
+        <source>is round trip?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>round_trip_tip</source>
+        <target>Is this a roundtrip where package is returned to you?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>special instructions</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>special_instructions_tip</source>
+        <target>Any other special instruction for delivery</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Clear fields</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Shopping cart</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Package details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>To</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>edit</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>edit partners</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>partner</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>contact person</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>postal code</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>email</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>login email</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>password</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>phone number</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>profit cut (%) that goes to us</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>partner details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>is partner enabled?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>create new partner?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Save changes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>edit properties</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>tax amount</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>package id length</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>payment id length</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>completed deliveries</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>login and details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>client full name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>contact name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>notification email</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>login name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>set password</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>address information</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>current address</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>payment options</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>credit cart type</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>credit card number</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Exp year</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>ccv number</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>billing information</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>first name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>last name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Street address 1</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Street address 2</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Use as default payment mehtod?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>pending deliveries</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Partner details information</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Courier name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Apt unit</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Street number</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Street name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>City</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Postal Code</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Notification email</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Contact phone</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Set password</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Province / state</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Create / edit zone</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Zone list</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Zone type</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>New zone?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>service levels</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>discounts</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>percentage discount (% off shippments)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>upload zone prices</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>CSV comma separated file</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Syntax</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Sample file</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Set zone prices</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>From zone</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>To zone</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Service level</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Price</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Availability to deliver parcels</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>available?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Exp month</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>First name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Last name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit zone elements</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>select zone</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>element list</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>element</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>New element?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Surcharges</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Gas surchage</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>% from total price</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Weight surchage</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>dollars per (lb) over</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>lb</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Add to shopping cart</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Update shopping cart</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>home (pending deliveries)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>address</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>availability</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>surcharges</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>edit zones</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>edit zone elements</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>edit zone prices</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>home (edit properties)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>partners (edit / create)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Shopping cart empty</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>contact phone</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>street number</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>main page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>partner home</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>logout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>partner login</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>admin home</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>order tracking</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>faq</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>contact us</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Share</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Main page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>New package</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Client settings</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Customer login</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Logout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>login information</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Login</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>shipping cart items</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Package code</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>From address</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>To address</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Delete</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Thank you for submitting the form</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Back to contacts page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Contact name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Company</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Email</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Submit</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Back</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Head office location</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Register</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>/partner/zone_prices</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>contact information</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_name_tip</source>
+        <target>Name of the account holder</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_apt_unit_tip</source>
+        <target>Apartment number of registrant account holder</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_street_number_tip</source>
+        <target>Streen number of registrant account holder</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_street_name_tip</source>
+        <target>Street name of registered account holder</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_country_tip</source>
+        <target>Country of registrant</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_postal_code_tip</source>
+        <target>Postal code of the registrant</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_city_tip</source>
+        <target>City name of the registrant</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_state_province_tip</source>
+        <target>State of province of registrant</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_contact_tip</source>
+        <target>Contant information for registrant</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_phone_tip</source>
+        <target>Registrant phone number</target>
+      </trans-unit>
+      <trans-unit>
+        <source>login and information details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_login_email_tip</source>
+        <target>Your email that will be used as login id</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_password_tip</source>
+        <target>Choose a secure password for loggin into the system</target>
+      </trans-unit>
+      <trans-unit>
+        <source>password repeat</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_password_repeat_tip</source>
+        <target>Repeat the password</target>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_email_tip</source>
+        <target>Email that will be used for notifications</target>
+      </trans-unit>
+      <trans-unit>
+        <source>how did you hear about courier express?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>reg_how_did_u_hear_tip</source>
+        <target>How did you hear about courier express?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>no packages added</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>your email address: (new clients)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>You email address</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Payment options</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>payment number or tracking number</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Get tracking info</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>no packages found</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>order payment code</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>package tracking number</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>from address</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>to address</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>delivery status</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>password will be sent to a registered email</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Recover password</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Choose method of payment</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Credit Card Payment</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Pay for order</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>please choose your courier for package</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>price</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>Continue order</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>zone name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>forgot password</source>
+        <target/>
+      </trans-unit>
+      <trans-unit>
+        <source>click here</source>
+        <target/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

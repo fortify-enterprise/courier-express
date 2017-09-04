@@ -1,0 +1,28 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=courier_express_prod;unix_socket=/var/run/mysqld/mysqld.sock'
+      username: courier_express
+      password: '^&*courier***'
+      attributes:
+        quote_identifier: true
+
+dev:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=courier_express_prod;unix_socket=/var/run/mysqld/mysqld.sock'
+      username: courier_express
+      password: '^&*courier***'
+      attributes:
+        quote_identifier: true
+
+
+#  sess_db:
+#    class: sfPDODatabase
+#    param:
+#      dsn: 'mysql:dbname=btsaleszone;host=localhost'
+#      username: root
+#      password: null
+

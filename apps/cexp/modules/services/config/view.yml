@@ -1,0 +1,15 @@
+all:
+  has_layout: false
+
+edit_packageSuccess:
+  has_layout: true
+  javascripts:
+    - services/edit_package.js
+
+get_delivered_bySuccess:
+  has_layout: false
+
+get_city_province_from_postalSuccess:
+  has_layout: false
+
+

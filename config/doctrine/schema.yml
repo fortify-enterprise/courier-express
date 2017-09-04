@@ -1,0 +1,2599 @@
+Address:
+  connection: doctrine
+  tableName: address
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    apt_unit:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    street_number:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    street_name:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    street_type:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    city:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    province_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    state_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    province_state_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    country_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    postal_code:
+      type: string(10)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Province:
+      local: province_id
+      foreign: id
+      type: one
+    State:
+      local: state_id
+      foreign: id
+      type: one
+    Country:
+      local: country_id
+      foreign: id
+      type: one
+    Client:
+      local: id
+      foreign: address_id
+      type: many
+    Client_4:
+      class: Client
+      local: id
+      foreign: address_id
+      type: many
+    ClientPaymentDetail:
+      local: id
+      foreign: address_id
+      type: many
+    Locate:
+      local: id
+      foreign: address_id
+      type: many
+    Package:
+      local: id
+      foreign: from_address_id
+      type: many
+    Package_6:
+      class: Package
+      local: id
+      foreign: from_address_id
+      type: many
+    Package_7:
+      class: Package
+      local: id
+      foreign: to_address_id
+      type: many
+    Package_12:
+      class: Package
+      local: id
+      foreign: to_address_id
+      type: many
+    Staff:
+      local: id
+      foreign: address_id
+      type: many
+    Staff_4:
+      class: Staff
+      local: id
+      foreign: address_id
+      type: many
+Client:
+  connection: doctrine
+  tableName: client
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    address_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    detail_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    payment_detail_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    login_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Address:
+      local: address_id
+      foreign: id
+      type: one
+    ClientDetail:
+      local: detail_id
+      foreign: id
+      type: one
+    ClientLogin:
+      local: login_id
+      foreign: id
+      type: one
+    Address_4:
+      class: Address
+      local: address_id
+      foreign: id
+      type: one
+    ClientType:
+      local: type_id
+      foreign: id
+      type: one
+    ClientDetail_6:
+      class: ClientDetail
+      local: detail_id
+      foreign: id
+      type: one
+    ClientPaymentDetail:
+      local: payment_detail_id
+      foreign: id
+      type: one
+    ClientLogin_8:
+      class: ClientLogin
+      local: login_id
+      foreign: id
+      type: one
+    ClientPaymentDetail_9:
+      class: ClientPaymentDetail
+      local: payment_detail_id
+      foreign: id
+      type: one
+    ClientType_10:
+      class: ClientType
+      local: type_id
+      foreign: id
+      type: one
+    Courier:
+      local: id
+      foreign: client_id
+      type: many
+    Courier_2:
+      class: Courier
+      local: id
+      foreign: client_id
+      type: many
+    Package:
+      local: id
+      foreign: client_id
+      type: many
+    Package_5:
+      class: Package
+      local: id
+      foreign: client_id
+      type: many
+    Payment:
+      local: id
+      foreign: client_id
+      type: many
+    Payment_2:
+      class: Payment
+      local: id
+      foreign: client_id
+      type: many
+    Staff:
+      local: id
+      foreign: client_id
+      type: many
+    Staff_3:
+      class: Staff
+      local: id
+      foreign: client_id
+      type: many
+ClientDetail:
+  connection: doctrine
+  tableName: client_detail
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    details:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    name:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    phone:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    email:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    contact:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    facebook_uid:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    how_did_u_hear:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    registration_date:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Client:
+      local: id
+      foreign: detail_id
+      type: many
+    Client_6:
+      class: Client
+      local: id
+      foreign: detail_id
+      type: many
+ClientLogin:
+  connection: doctrine
+  tableName: client_login
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    email:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    password_hash:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    password:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Client:
+      local: id
+      foreign: login_id
+      type: many
+    Client_8:
+      class: Client
+      local: id
+      foreign: login_id
+      type: many
+ClientPaymentDetail:
+  connection: doctrine
+  tableName: client_payment_detail
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    profile_code:
+      type: string(127)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    card_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    card_number:
+      type: string(40)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    exp_month:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    exp_year:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ccv_number:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    address1:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    address2:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    address_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    is_default:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    CreditCardType:
+      local: card_type_id
+      foreign: id
+      type: one
+    Address:
+      local: address_id
+      foreign: id
+      type: one
+    Client:
+      local: id
+      foreign: payment_detail_id
+      type: many
+    Client_9:
+      class: Client
+      local: id
+      foreign: payment_detail_id
+      type: many
+ClientType:
+  connection: doctrine
+  tableName: client_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: false
+    type:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: sender
+      notnull: true
+      autoincrement: false
+  relations:
+    Client:
+      local: id
+      foreign: type_id
+      type: many
+    Client_10:
+      class: Client
+      local: id
+      foreign: type_id
+      type: many
+Country:
+  connection: doctrine
+  tableName: country
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    name:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    code2:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    code3:
+      type: string(3)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Address:
+      local: id
+      foreign: country_id
+      type: many
+Courier:
+  connection: doctrine
+  tableName: courier
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    client_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    profit_cut:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    available:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    enabled:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Client:
+      local: client_id
+      foreign: id
+      type: one
+    Client_2:
+      class: Client
+      local: client_id
+      foreign: id
+      type: one
+    CourierContact:
+      local: id
+      foreign: courier_id
+      type: many
+    CourierContact_2:
+      class: CourierContact
+      local: id
+      foreign: courier_id
+      type: many
+    CourierDiscount:
+      local: id
+      foreign: courier_id
+      type: many
+    CourierDiscount_2:
+      class: CourierDiscount
+      local: id
+      foreign: courier_id
+      type: many
+    Package:
+      local: id
+      foreign: courier_id
+      type: many
+    Package_10:
+      class: Package
+      local: id
+      foreign: courier_id
+      type: many
+    PriceLevel:
+      local: id
+      foreign: courier_id
+      type: many
+    ServiceLevel:
+      local: id
+      foreign: courier_id
+      type: many
+    ServiceLevel_2:
+      class: ServiceLevel
+      local: id
+      foreign: courier_id
+      type: many
+    Surcharge:
+      local: id
+      foreign: courier_id
+      type: many
+    Surcharge_2:
+      class: Surcharge
+      local: id
+      foreign: courier_id
+      type: many
+    Zone:
+      local: id
+      foreign: courier_id
+      type: many
+    Zone_2:
+      class: Zone
+      local: id
+      foreign: courier_id
+      type: many
+CourierContact:
+  connection: doctrine
+  tableName: courier_contact
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    courier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    name:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    surname:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    telephone:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    mobile:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Courier:
+      local: courier_id
+      foreign: id
+      type: one
+    Courier_2:
+      class: Courier
+      local: courier_id
+      foreign: id
+      type: one
+CourierDiscount:
+  connection: doctrine
+  tableName: courier_discount
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    courier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    discount:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Courier:
+      local: courier_id
+      foreign: id
+      type: one
+    Courier_2:
+      class: Courier
+      local: courier_id
+      foreign: id
+      type: one
+CreditCardType:
+  connection: doctrine
+  tableName: credit_card_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    abbr:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    enabled:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ClientPaymentDetail:
+      local: id
+      foreign: card_type_id
+      type: many
+DeliveryType:
+  connection: doctrine
+  tableName: delivery_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PackageDetail:
+      local: id
+      foreign: delivery_type_id
+      type: many
+    PackageDetail_2:
+      class: PackageDetail
+      local: id
+      foreign: delivery_type_id
+      type: many
+Locate:
+  connection: doctrine
+  tableName: locate
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    address_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    lat:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    lng:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Address:
+      local: address_id
+      foreign: id
+      type: one
+MigrationVersion:
+  connection: doctrine
+  tableName: migration_version
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    version:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Package:
+  connection: doctrine
+  tableName: package
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    package_code:
+      type: string(48)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    courier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    client_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    from_address_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    to_address_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    status_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    detail_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    partner_price:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    partner_tax:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    price:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    tax:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Client:
+      local: client_id
+      foreign: id
+      type: one
+    Courier:
+      local: courier_id
+      foreign: id
+      type: one
+    PackageDetail:
+      local: detail_id
+      foreign: id
+      type: one
+    Address:
+      local: from_address_id
+      foreign: id
+      type: one
+    Client_5:
+      class: Client
+      local: client_id
+      foreign: id
+      type: one
+    Address_6:
+      class: Address
+      local: from_address_id
+      foreign: id
+      type: one
+    Address_7:
+      class: Address
+      local: to_address_id
+      foreign: id
+      type: one
+    PackageStatus:
+      local: status_id
+      foreign: id
+      type: one
+    PackageDetail_9:
+      class: PackageDetail
+      local: detail_id
+      foreign: id
+      type: one
+    Courier_10:
+      class: Courier
+      local: courier_id
+      foreign: id
+      type: one
+    PackageStatus_11:
+      class: PackageStatus
+      local: status_id
+      foreign: id
+      type: one
+    Address_12:
+      class: Address
+      local: to_address_id
+      foreign: id
+      type: one
+    PackagePayment:
+      local: id
+      foreign: package_id
+      type: many
+    PackagePayment_3:
+      class: PackagePayment
+      local: id
+      foreign: package_id
+      type: many
+PackageDetail:
+  connection: doctrine
+  tableName: package_detail
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    ready_time:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ready_date:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    num_pieces:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    weight:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    weight_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    reference:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    package_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    service_level_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    delivery_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    round_trip:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    instructions:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sender_phone:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sender_contact:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    phone:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    contact:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    signed_by:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    last_updated:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    DeliveryType:
+      local: delivery_type_id
+      foreign: id
+      type: one
+    DeliveryType_2:
+      class: DeliveryType
+      local: delivery_type_id
+      foreign: id
+      type: one
+    ServiceLevelType:
+      local: service_level_type_id
+      foreign: id
+      type: one
+    ServiceLevelType_4:
+      class: ServiceLevelType
+      local: service_level_type_id
+      foreign: id
+      type: one
+    PackageType:
+      local: package_type_id
+      foreign: id
+      type: one
+    WeightType:
+      local: weight_type_id
+      foreign: id
+      type: one
+    ServiceLevelType_7:
+      class: ServiceLevelType
+      local: service_level_type_id
+      foreign: id
+      type: one
+    Package:
+      local: id
+      foreign: detail_id
+      type: many
+    Package_9:
+      class: Package
+      local: id
+      foreign: detail_id
+      type: many
+PackagePayment:
+  connection: doctrine
+  tableName: package_payment
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    payment_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    package_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Payment:
+      local: payment_id
+      foreign: id
+      type: one
+    Package:
+      local: package_id
+      foreign: id
+      type: one
+    Package_3:
+      class: Package
+      local: package_id
+      foreign: id
+      type: one
+    Payment_4:
+      class: Payment
+      local: payment_id
+      foreign: id
+      type: one
+PackageStatus:
+  connection: doctrine
+  tableName: package_status
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    status:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Package:
+      local: id
+      foreign: status_id
+      type: many
+    Package_11:
+      class: Package
+      local: id
+      foreign: status_id
+      type: many
+PackageType:
+  connection: doctrine
+  tableName: package_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PackageDetail:
+      local: id
+      foreign: package_type_id
+      type: many
+Payment:
+  connection: doctrine
+  tableName: payment
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    payment_code:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    client_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    amount:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    payment_type:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ipn_string:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    trn_id:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Client:
+      local: client_id
+      foreign: id
+      type: one
+    Client_2:
+      class: Client
+      local: client_id
+      foreign: id
+      type: one
+    PackagePayment:
+      local: id
+      foreign: payment_id
+      type: many
+    PackagePayment_4:
+      class: PackagePayment
+      local: id
+      foreign: payment_id
+      type: many
+PostalCode:
+  connection: doctrine
+  tableName: postal_code
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    postal_code:
+      type: string(7)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    province:
+      type: string(40)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    province_code:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city_type:
+      type: string(1)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    latitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    longitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+PriceLevel:
+  connection: doctrine
+  tableName: price_level
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    courier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    name:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Courier:
+      local: courier_id
+      foreign: id
+      type: one
+    ServiceAddon:
+      local: id
+      foreign: price_level_id
+      type: many
+    WeightPrice:
+      local: id
+      foreign: price_level_id
+      type: many
+    ZonePriceLevel:
+      local: id
+      foreign: price_level_id
+      type: many
+PriceType:
+  connection: doctrine
+  tableName: price_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    WeightPrice:
+      local: id
+      foreign: price_type_id
+      type: many
+Province:
+  connection: doctrine
+  tableName: province
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    province_territory:
+      type: string(40)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sgc_code:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    alpha_code:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    abbreviation:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Address:
+      local: id
+      foreign: province_id
+      type: many
+ServiceAddon:
+  connection: doctrine
+  tableName: service_addon
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    service_level_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    price_level_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    from_zone_polygon_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    to_zone_polygon_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: false
+      autoincrement: false
+    price:
+      type: float(7)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ServiceLevel:
+      local: service_level_type_id
+      foreign: type_id
+      type: one
+    PriceLevel:
+      local: price_level_id
+      foreign: id
+      type: one
+    ZonePolygon:
+      local: from_zone_polygon_id
+      foreign: id
+      type: one
+    ZonePolygon_4:
+      class: ZonePolygon
+      local: to_zone_polygon_id
+      foreign: id
+      type: one
+ServiceLevel:
+  connection: doctrine
+  tableName: service_level
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    courier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    is_enabled:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Courier:
+      local: courier_id
+      foreign: id
+      type: one
+    Courier_2:
+      class: Courier
+      local: courier_id
+      foreign: id
+      type: one
+    ServiceLevelType:
+      local: type_id
+      foreign: id
+      type: one
+    ServiceLevelType_4:
+      class: ServiceLevelType
+      local: type_id
+      foreign: id
+      type: one
+    ServiceAddon:
+      local: type_id
+      foreign: service_level_type_id
+      type: many
+ServiceLevelType:
+  connection: doctrine
+  tableName: service_level_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    hours:
+      type: string(1)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PackageDetail:
+      local: id
+      foreign: service_level_type_id
+      type: many
+    PackageDetail_4:
+      class: PackageDetail
+      local: id
+      foreign: service_level_type_id
+      type: many
+    PackageDetail_7:
+      class: PackageDetail
+      local: id
+      foreign: service_level_type_id
+      type: many
+    ServiceLevel:
+      local: id
+      foreign: type_id
+      type: many
+    ServiceLevel_4:
+      class: ServiceLevel
+      local: id
+      foreign: type_id
+      type: many
+Session:
+  connection: doctrine
+  tableName: session
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: true
+    time:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    session_data:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Settings:
+  connection: doctrine
+  tableName: settings
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    setting:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    value:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+SmsIncoming:
+  connection: doctrine
+  tableName: sms_incoming
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    carrier:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    toa:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    smsc:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sent_on:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    received_on:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    imsi:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    length:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    reply_required:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    replied_on:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SmsMessage:
+  connection: doctrine
+  tableName: sms_message
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    number:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sent_on:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Staff:
+  connection: doctrine
+  tableName: staff
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    name:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    surname:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    address_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    client_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Address:
+      local: address_id
+      foreign: id
+      type: one
+    Client:
+      local: client_id
+      foreign: id
+      type: one
+    Client_3:
+      class: Client
+      local: client_id
+      foreign: id
+      type: one
+    Address_4:
+      class: Address
+      local: address_id
+      foreign: id
+      type: one
+State:
+  connection: doctrine
+  tableName: state
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    name:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    alpha_code:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    abbreviation:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    numerical_code:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Address:
+      local: id
+      foreign: state_id
+      type: many
+StreetType:
+  connection: doctrine
+  tableName: street_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Surcharge:
+  connection: doctrine
+  tableName: surcharge
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    courier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    surcharge_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    amt_limit:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.00'
+      notnull: true
+      autoincrement: false
+    amount:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Courier:
+      local: courier_id
+      foreign: id
+      type: one
+    Courier_2:
+      class: Courier
+      local: courier_id
+      foreign: id
+      type: one
+    SurchargeType:
+      local: surcharge_type_id
+      foreign: id
+      type: one
+    SurchargeType_4:
+      class: SurchargeType
+      local: surcharge_type_id
+      foreign: id
+      type: one
+SurchargeType:
+  connection: doctrine
+  tableName: surcharge_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Surcharge:
+      local: id
+      foreign: surcharge_type_id
+      type: many
+    Surcharge_4:
+      class: Surcharge
+      local: id
+      foreign: surcharge_type_id
+      type: many
+UnableToDeliver:
+  connection: doctrine
+  tableName: unable_to_deliver
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    package_data:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    attempted_on:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Visitor:
+  connection: doctrine
+  tableName: visitor
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    ip:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    status:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    country_code:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    country_name:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    region_code:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    region_name:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    zip_postal_code:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    latitude:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    longitude:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    timezone_name:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    gmtoffset:
+      type: string(16)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    isdst:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    agent:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_ts:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+WeightPrice:
+  connection: doctrine
+  tableName: weight_price
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    weight_start:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    weight_end:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    price_level_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    price_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    weight_type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    price:
+      type: 'decimal(7, 2)'
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    WeightType:
+      local: weight_type_id
+      foreign: id
+      type: one
+    PriceLevel:
+      local: price_level_id
+      foreign: id
+      type: one
+    PriceType:
+      local: price_type_id
+      foreign: id
+      type: one
+WeightType:
+  connection: doctrine
+  tableName: weight_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PackageDetail:
+      local: id
+      foreign: weight_type_id
+      type: many
+    WeightPrice:
+      local: id
+      foreign: weight_type_id
+      type: many
+ZipCode:
+  connection: doctrine
+  tableName: zip_code
+  columns:
+    zip_code:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    lat:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    lon:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    state_prefix:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    county:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    z_type:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    xaxis:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    yaxis:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    zaxis:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    z_primary:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    worldregion:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    country:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    locationtext:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    location:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    population:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    housingunits:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    income:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    landarea:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    waterarea:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    decommisioned:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    militaryrestrictioncodes:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    decommisionedplace:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+Zone:
+  connection: doctrine
+  tableName: zone
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    name:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    courier_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    zone_polygon_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Courier:
+      local: courier_id
+      foreign: id
+      type: one
+    Courier_2:
+      class: Courier
+      local: courier_id
+      foreign: id
+      type: one
+    ZonePolygon:
+      local: zone_polygon_id
+      foreign: id
+      type: one
+    ZonePriceLevel:
+      local: id
+      foreign: from_zone_id
+      type: many
+    ZonePriceLevel_2:
+      class: ZonePriceLevel
+      local: id
+      foreign: to_zone_id
+      type: many
+ZonePolygon:
+  connection: doctrine
+  tableName: zone_polygon
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+    pdata:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ZonePolygonType:
+      local: type_id
+      foreign: id
+      type: one
+    ServiceAddon:
+      local: id
+      foreign: from_zone_polygon_id
+      type: many
+    ServiceAddon_4:
+      class: ServiceAddon
+      local: id
+      foreign: to_zone_polygon_id
+      type: many
+    Zone:
+      local: id
+      foreign: zone_polygon_id
+      type: many
+ZonePolygonType:
+  connection: doctrine
+  tableName: zone_polygon_type
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    ZonePolygon:
+      local: id
+      foreign: type_id
+      type: many
+ZonePriceLevel:
+  connection: doctrine
+  tableName: zone_price_level
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    from_zone_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: false
+    to_zone_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: false
+    price_level_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Zone:
+      local: from_zone_id
+      foreign: id
+      type: one
+    Zone_2:
+      class: Zone
+      local: to_zone_id
+      foreign: id
+      type: one
+    PriceLevel:
+      local: price_level_id
+      foreign: id
+      type: one

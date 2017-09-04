@@ -1,0 +1,65 @@
+prod:
+  .settings:
+    no_script_name:         false
+    logging_enabled:        true
+    smarty_helpers:         [Tag, I18N, Url, Helper]
+    standard_helpers:       [Tag, I18N, Url, Helper, Partial, Cache]
+    etag:                   true
+    cache:                  false
+    timeout:                86400
+    i18n:                   true       # Enable interface translation. Set to off if your application should not be translated.
+
+  .actions:
+    unavailable_module:     exception
+    unavailable_action:     unavailable
+
+dev:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+    smarty_helpers:         [Tag, I18N, Url, Helper]
+    standard_helpers:       [Tag, I18N, Url, Helper, Partial, Cache]
+    timeout:                86400
+    i18n:                   true       # Enable interface translation. Set to off if your application should not be translated.
+
+test:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    cache:                  false
+    web_debug:              false
+    no_script_name:         false
+    etag:                   false
+    smarty_helpers:         [Tag, I18N, Url, Helper]
+    standard_helpers:       [Tag, I18N, Url, Helper, Partial, Cache]
+    timeout:                86400
+
+  .actions:
+    unavailable_module:     exception
+    unavailable_action:     unavailable
+
+all:
+  .settings:
+    no_script_name:         false
+    csrf_secret:           'J3c3oUIkf122ffs23g3c'   # Unique secret to enable CSRF protection or false to disable
+    escaping_strategy:      true            # Determines how variables are made available to templates. Accepted values: on, off.
+    escaping_method:        ESC_SPECIALCHARS
+    lazy_cache_key:         true        # Delays creation of a cache key until after checking whether an action or partial is cacheable
+    smarty_helpers:         [Tag, I18N, Url, Helper]
+    standard_helpers:       [Tag, I18N, Url, Helper, Partial, Cache]
+
+    i18n:                   true       # Enable interface translation. Set to off if your application should not be translated.
+    check_lock:             true
+    charset:                utf-8
+    default_culture:        en_us      # Default user culture
+    timeout:                false
+
+all:
+  .actions:
+    login_module:           auth   # To be called when a non-authenticated user
+    login_action:           index  # Tries to access a secure page
+
+    error_404_module:       exception  # To be called when a 404 error is raised
+    error_404_action:       error  # Or when the requested URL doesn't match any route

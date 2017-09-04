@@ -1,0 +1,9 @@
+all:
+  stylesheets:
+    - content_width.css
+
+  javascripts:
+    - admin/admin.js
+
+get_courier_informationSuccess:
+  has_layout: false

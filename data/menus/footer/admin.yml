@@ -1,0 +1,6 @@
+-
+  name: 'Home page'
+  link: admin/index
+-
+  name: 'Logout'
+  link: auth/logout

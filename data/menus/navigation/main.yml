@@ -1,0 +1,20 @@
+-
+  name: 'Home'
+  link: landing_page/index
+-
+  name: 'Packages'
+  0: { name: 'New package', link: main_page/index }
+  1: { name: 'Shopping cart', link: cart/index }
+  2: { name: 'Checkout', link: checkout/index }
+-
+  name: 'Client register'
+  link: register/client
+-
+  name: 'About Us'
+  0: { name: 'Our Partners', link: landing_page/our_partners }
+  1: { name: 'Courier Express', link: landing_page/about_us }
+-
+  name: 'Contact Us'
+  0: { name: 'Have a Question?', link: form/enquiry }
+  1: { name: 'Site Feedback', link: form/feedback }
+  2: { name: 'Partnership request', link: form/partner_contact }

@@ -1,0 +1,15 @@
+-
+  name: 'Home page'
+  link: landing_page/index
+-
+  name: 'Track shippment'
+  link: tracking/index
+-
+  name: 'Login screen'
+  link: auth/index
+-
+  name: 'Refund policy'
+  link: legal/refund
+-
+  name: 'Privacy policy'
+  link: legal/privacy

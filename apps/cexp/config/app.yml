@@ -1,0 +1,78 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  sfSmarty:
+    class_path: lib/vendor/smarty/libs
+    template_extension: .tpl
+    template_security: false
+
+  enable_language_detect_me: on
+  google_maps:
+    api_key: ABQIAAAAumXpD6ZdyiLBAC_CXg6OAxQZ3XHTE4OV6uc3pITnoP_HB94xNxS4GIzQQFeFXpMBoh4uqeeW502uiA
+    url: http://maps.google.com/maps/api/geocode/json?address=
+
+  ipinfodb:
+    api_key: e2ac3d5d4089730c6c6cc0f29b8990be3e256f5c72ac0027d399e8119b3ddad9
+
+  google_analytics_key: UA-9779751-2
+
+  yahoo_maps:
+    api_key:
+    url: http://where.yahooapis.com/geocode?q=
+
+  # yahoo account cexpress_geo@yahoo.com pass cexpress_geo^&*
+  facebook:
+    id: 134730206585553
+    secret: 482fa06144ef5347d53effce9e5ff861
+
+  email:
+    support: info@courierexpress.ca
+    marketing: mark@courierexpress.ca
+    relations: bj@courierexpress.ca
+    noreply: noreply@courierexpress.ca
+
+  password:
+    salt: 152adc82
+    function: whirlpool
+  sms:
+    outgoing: /var/spool/sms/outgoing
+    incoming: /var/spool/sms/incoming
+
+  messages:
+    password:
+      recovery: 'Courier Express password recovery'
+
+  pagination:
+    main_page: 4
+    cart: 5
+    tracking: 2
+    visitors: 25
+
+  beanstream_prod:
+      merchant_id: 212470000
+      passcode: 41A8E4338D7c46dEbDe7B39C2A9B6017
+      username: courierexpress
+      password: 7111a7a590f44ec7
+
+  beanstream_dev:
+      merchant_id: 212330000
+      passcode: b99419cA72f14AdaB69414adC919F7D0
+      username: courierexpress
+      password: 7621a7d590f91ec6
+  
+  package:
+    # maximum weight system can handle
+    max_weight: 25000
+    # 30% refund when returning for cancelled package
+    refund_percentage: 30
+
+  constant:
+    pounds_in_kg: 0.45359237
+
+  settings:
+    tax_amount: 12
+    package_id_length: 15
+    payment_id_length: 10
+

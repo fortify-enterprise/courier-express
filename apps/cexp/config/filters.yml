@@ -1,0 +1,26 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/12-Filters
+
+rendering: ~
+security:  ~
+
+# insert your own filters here
+language_detect:
+  class: language_detectFilter
+
+# creates environment variables for js
+environment_app:
+  class: environmentFilter
+
+country_byip:
+  class: country_byipFilter
+
+analytics:
+  class: google_analyticsFilter
+
+session_timeout:
+  class: session_timeoutFilter
+
+
+cache:     ~
+execution: ~

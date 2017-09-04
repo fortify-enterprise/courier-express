@@ -1,0 +1,3 @@
+get_states_provinces_for_country:
+  enabled: true
+  lifetime: 604800

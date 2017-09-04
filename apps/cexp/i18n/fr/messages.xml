@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="fr" datatype="plaintext" original="messages" date="2009-12-20T12:47:46Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>type of delivery</source>
+        <target>type de transport</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>service</source>
+        <target>service</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>ready date</source>
+        <target>Date de prêt</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>ready time</source>
+        <target>prêt à temps</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>delivered by</source>
+        <target>rendu par</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>password will be sent to a registered email</source>
+        <target>mot de passe sera envoyé à un e-mail</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>login email</source>
+        <target>Login E-mail</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Recover password</source>
+        <target>Récupérer mot de passe</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>login information</source>
+        <target>Informations de connexion</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>login name</source>
+        <target>login name</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>forgot password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>click here</source>
+        <target>cliquez ici</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Login</source>
+        <target>Connexion</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>shopping cart items</source>
+        <target>Shopping cart</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>page</source>
+        <target>Page</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Package code</source>
+        <target>Paquet avec le code</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>From address</source>
+        <target>De l'adresse</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>To address</source>
+        <target>Pour faire face à</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Service level</source>
+        <target>De niveau de service</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Delete</source>
+        <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>edit</source>
+        <target>modifier</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>no packages added</source>
+        <target>Aucun forfait ajouté</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Update shopping cart</source>
+        <target>Mise à jour de Panier</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>home (pending deliveries)</source>
+        <target>accouchements à domicile (en attente)</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>completed deliveries</source>
+        <target>achevé les livraisons</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>address</source>
+        <target>adresse</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>login and details</source>
+        <target>login et détails</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>payment options</source>
+        <target>options de paiement</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>partner details</source>
+        <target>Coordonnées des partenaires</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>availability</source>
+        <target>disponibilité</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>surcharges</source>
+        <target>surtaxes</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>discounts</source>
+        <target>Promotions</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>service levels</source>
+        <target>les niveaux de service</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>edit zones</source>
+        <target>modifier les zones de</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>edit zone elements</source>
+        <target>modifier les éléments de la zone</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>edit zone prices</source>
+        <target>modifier prix de zone</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>upload zone prices</source>
+        <target>prix de zone upload</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>home (edit properties)</source>
+        <target>domicile (éditer les propriétés)</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>partners (edit / create)</source>
+        <target>partenaires (éditer / créer)</target>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>Shopping cart empty</source>
+        <target>Panier vide</target>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>Thank you for submitting the form</source>
+        <target>Merci d'avoir soumis le formulaire</target>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Back to contacts page</source>
+        <target>Retour à la page des contacts</target>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>Contact name</source>
+        <target>Nom de contact</target>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>Company</source>
+        <target>Entreprise</target>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Contact phone</source>
+        <target>Contact téléphonique</target>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>Details</source>
+        <target>Détails</target>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Submit</source>
+        <target>Envoyer</target>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Back</source>
+        <target>Retour</target>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>Head office location</source>
+        <target>Head Office Location</target>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>edit partners</source>
+        <target>Modifier les partenaires</target>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>partner</source>
+        <target>partenaires</target>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>name</source>
+        <target>nom</target>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>contact person</source>
+        <target>personne de contact</target>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>apt unit</source>
+        <target>apt unité</target>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>street number</source>
+        <target>Numéro de rue</target>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>street name</source>
+        <target>Nom de la rue</target>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>country</source>
+        <target>pays</target>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>postal code</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>city</source>
+        <target>ville</target>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>province / state</source>
+        <target>Province / État</target>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>email</source>
+        <target>e-mail</target>
+      </trans-unit>
+      <trans-unit id="63">
+        <source>password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>phone number</source>
+        <target>numéro de téléphone</target>
+      </trans-unit>
+      <trans-unit id="65">
+        <source>profit cut (%) that goes to us</source>
+        <target>coupe sans but lucratif (%) qui va nous</target>
+      </trans-unit>
+      <trans-unit id="66">
+        <source>is partner enabled?</source>
+        <target>est le partenaire activé?</target>
+      </trans-unit>
+      <trans-unit id="67">
+        <source>create new partner?</source>
+        <target>créer un nouveau partenaire?</target>
+      </trans-unit>
+      <trans-unit id="68">
+        <source>Save changes</source>
+        <target>Enregistrer les modifications</target>
+      </trans-unit>
+      <trans-unit id="69">
+        <source>edit properties</source>
+        <target>modifier les propriétés</target>
+      </trans-unit>
+      <trans-unit id="70">
+        <source>tax amount</source>
+        <target>Montant de la taxe</target>
+      </trans-unit>
+      <trans-unit id="71">
+        <source>package id length</source>
+        <target>paquet de longueur id</target>
+      </trans-unit>
+      <trans-unit id="72">
+        <source>payment id length</source>
+        <target>paiement longueur id</target>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>Page</source>
+        <target>Page</target>
+      </trans-unit>
+      <trans-unit id="74">
+        <source>Shopping cart</source>
+        <target>Panier</target>
+      </trans-unit>
+      <trans-unit id="75">
+        <source>Package details</source>
+        <target>Détails du forfait</target>
+      </trans-unit>
+      <trans-unit id="76">
+        <source>To</source>
+        <target>À</target>
+      </trans-unit>
+      <trans-unit id="77">
+        <source>your email address: (new clients)</source>
+        <target>votre adresse email: (nouveaux clients)</target>
+      </trans-unit>
+      <trans-unit id="78">
+        <source>You email address</source>
+        <target>Votre adresse email</target>
+      </trans-unit>
+      <trans-unit id="79">
+        <source>Choose method of payment</source>
+        <target>Choisir le mode de paiement</target>
+      </trans-unit>
+      <trans-unit id="80">
+        <source>Credit Card Payment</source>
+        <target>Paiement par carte de crédit</target>
+      </trans-unit>
+      <trans-unit id="81">
+        <source>Pay for order</source>
+        <target>Payer pour l'ordre</target>
+      </trans-unit>
+      <trans-unit id="82">
+        <source>please choose your courier for package</source>
+        <target>S'il vous plaît choisissez votre courrier pour un forfait de</target>
+      </trans-unit>
+      <trans-unit id="83">
+        <source>price</source>
+        <target>prix</target>
+      </trans-unit>
+      <trans-unit id="84">
+        <source>Continue order</source>
+        <target>Poursuivre la commande</target>
+      </trans-unit>
+      <trans-unit id="85">
+        <source>client full name</source>
+        <target>client nom complet</target>
+      </trans-unit>
+      <trans-unit id="86">
+        <source>contact name</source>
+        <target>Contact Nom</target>
+      </trans-unit>
+      <trans-unit id="87">
+        <source>notification email</source>
+        <target>notification par email</target>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>set password</source>
+        <target>SET PASSWORD</target>
+      </trans-unit>
+      <trans-unit id="89">
+        <source>contact phone</source>
+        <target>contact téléphonique</target>
+      </trans-unit>
+      <trans-unit id="90">
+        <source>address information</source>
+        <target>informations d'adresse</target>
+      </trans-unit>
+      <trans-unit id="91">
+        <source>current address</source>
+        <target>Adresse actuelle</target>
+      </trans-unit>
+      <trans-unit id="92">
+        <source>credit cart type</source>
+        <target>Credit panier type</target>
+      </trans-unit>
+      <trans-unit id="93">
+        <source>credit card number</source>
+        <target>Numéro de carte de crédit</target>
+      </trans-unit>
+      <trans-unit id="94">
+        <source>Exp year</source>
+        <target>An exp</target>
+      </trans-unit>
+      <trans-unit id="95">
+        <source>ccv number</source>
+        <target>Numéro CCV</target>
+      </trans-unit>
+      <trans-unit id="96">
+        <source>billing information</source>
+        <target>Informations de facturation</target>
+      </trans-unit>
+      <trans-unit id="97">
+        <source>first name</source>
+        <target>prénom</target>
+      </trans-unit>
+      <trans-unit id="98">
+        <source>last name</source>
+        <target>nom de famille</target>
+      </trans-unit>
+      <trans-unit id="99">
+        <source>Street address 1</source>
+        <target>Adresse 1</target>
+      </trans-unit>
+      <trans-unit id="100">
+        <source>Street address 2</source>
+        <target>Adresse 2</target>
+      </trans-unit>
+      <trans-unit id="101">
+        <source>postal / zip code</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit id="102">
+        <source>Use as default payment mehtod?</source>
+        <target>Utilisation comme moyen de paiement par défaut PROCESSUS PERMETTANT?</target>
+      </trans-unit>
+      <trans-unit id="103">
+        <source>pending deliveries</source>
+        <target>en attendant la livraison</target>
+      </trans-unit>
+      <trans-unit id="104">
+        <source>main page</source>
+        <target>page principale</target>
+      </trans-unit>
+      <trans-unit id="105">
+        <source>partner home</source>
+        <target>Partner Home</target>
+      </trans-unit>
+      <trans-unit id="106">
+        <source>logout</source>
+        <target>logout</target>
+      </trans-unit>
+      <trans-unit id="107">
+        <source>partner login</source>
+        <target>Partner login</target>
+      </trans-unit>
+      <trans-unit id="108">
+        <source>admin home</source>
+        <target>admin Accueil</target>
+      </trans-unit>
+      <trans-unit id="109">
+        <source>order tracking</source>
+        <target>Suivi de commande</target>
+      </trans-unit>
+      <trans-unit id="110">
+        <source>faq</source>
+        <target>faq</target>
+      </trans-unit>
+      <trans-unit id="111">
+        <source>contact us</source>
+        <target>Contactez-nous</target>
+      </trans-unit>
+      <trans-unit id="112">
+        <source>Share</source>
+        <target>Partager</target>
+      </trans-unit>
+      <trans-unit id="113">
+        <source>Main page</source>
+        <target>Page principale</target>
+      </trans-unit>
+      <trans-unit id="114">
+        <source>New package</source>
+        <target>Nouveau paquet</target>
+      </trans-unit>
+      <trans-unit id="115">
+        <source>Client settings</source>
+        <target>Paramètres du client</target>
+      </trans-unit>
+      <trans-unit id="116">
+        <source>Register</source>
+        <target>Inscrivez-vous</target>
+      </trans-unit>
+      <trans-unit id="117">
+        <source>Customer login</source>
+        <target>Login Client</target>
+      </trans-unit>
+      <trans-unit id="118">
+        <source>Logout</source>
+        <target>Déconnexion</target>
+      </trans-unit>
+      <trans-unit id="119">
+        <source>Partner details information</source>
+        <target>Détails Informations sur le Partenaire</target>
+      </trans-unit>
+      <trans-unit id="120">
+        <source>Courier name</source>
+        <target>Courrier de nom</target>
+      </trans-unit>
+      <trans-unit id="121">
+        <source>Apt unit</source>
+        <target>Apt unité</target>
+      </trans-unit>
+      <trans-unit id="122">
+        <source>Street number</source>
+        <target>Numéro de rue</target>
+      </trans-unit>
+      <trans-unit id="123">
+        <source>Street name</source>
+        <target>Nom de rue</target>
+      </trans-unit>
+      <trans-unit id="124">
+        <source>City</source>
+        <target>Ville</target>
+      </trans-unit>
+      <trans-unit id="125">
+        <source>Postal Code</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit id="126">
+        <source>Notification email</source>
+        <target>Notification e-mail</target>
+      </trans-unit>
+      <trans-unit id="127">
+        <source>Set password</source>
+        <target>Définir mot de passe</target>
+      </trans-unit>
+      <trans-unit id="128">
+        <source>Province / state</source>
+        <target>Province / État</target>
+      </trans-unit>
+      <trans-unit id="129">
+        <source>Create / edit zone</source>
+        <target>Créer / modifier zone</target>
+      </trans-unit>
+      <trans-unit id="130">
+        <source>Zone list</source>
+        <target>Zone de liste</target>
+      </trans-unit>
+      <trans-unit id="131">
+        <source>Zone type</source>
+        <target>Zone Type</target>
+      </trans-unit>
+      <trans-unit id="132">
+        <source>zone name</source>
+        <target>Nom de la zone</target>
+      </trans-unit>
+      <trans-unit id="133">
+        <source>New zone?</source>
+        <target>Nouvelle zone?</target>
+      </trans-unit>
+      <trans-unit id="134">
+        <source>percentage discount (% off shippments)</source>
+        <target>pourcentage de réduction (% de réduction shippments)</target>
+      </trans-unit>
+      <trans-unit id="135">
+        <source>CSV comma separated file</source>
+        <target>CSV séparés par des virgules</target>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>Syntax</source>
+        <target>Syntaxe</target>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Sample file</source>
+        <target>Exemple de fichier</target>
+      </trans-unit>
+      <trans-unit id="138">
+        <source>/partner/zone_prices</source>
+        <target>/ partner / zone_prices</target>
+      </trans-unit>
+      <trans-unit id="139">
+        <source>Set zone prices</source>
+        <target>Zone de fixation des prix</target>
+      </trans-unit>
+      <trans-unit id="140">
+        <source>From zone</source>
+        <target>De la zone</target>
+      </trans-unit>
+      <trans-unit id="141">
+        <source>To zone</source>
+        <target>À la zone</target>
+      </trans-unit>
+      <trans-unit id="142">
+        <source>Price</source>
+        <target>Prix</target>
+      </trans-unit>
+      <trans-unit id="143">
+        <source>Availability to deliver parcels</source>
+        <target>Disponibilité pour livrer des colis</target>
+      </trans-unit>
+      <trans-unit id="144">
+        <source>available?</source>
+        <target>disponible?</target>
+      </trans-unit>
+      <trans-unit id="145">
+        <source>Exp month</source>
+        <target>Exp mois</target>
+      </trans-unit>
+      <trans-unit id="146">
+        <source>First name</source>
+        <target>Prénom</target>
+      </trans-unit>
+      <trans-unit id="147">
+        <source>Last name</source>
+        <target>Nom de famille</target>
+      </trans-unit>
+      <trans-unit id="148">
+        <source>Edit zone elements</source>
+        <target>Modifier la zone des éléments</target>
+      </trans-unit>
+      <trans-unit id="149">
+        <source>select zone</source>
+        <target>sélectionnez la zone</target>
+      </trans-unit>
+      <trans-unit id="150">
+        <source>element list</source>
+        <target>élément de la liste</target>
+      </trans-unit>
+      <trans-unit id="151">
+        <source>element</source>
+        <target>élément</target>
+      </trans-unit>
+      <trans-unit id="152">
+        <source>New element?</source>
+        <target>Nouvel élément?</target>
+      </trans-unit>
+      <trans-unit id="153">
+        <source>Surcharges</source>
+        <target>Surtaxes</target>
+      </trans-unit>
+      <trans-unit id="154">
+        <source>Gas surchage</source>
+        <target>Gas surchage</target>
+      </trans-unit>
+      <trans-unit id="155">
+        <source>% from total price</source>
+        <target>% De prix total</target>
+      </trans-unit>
+      <trans-unit id="156">
+        <source>Weight surchage</source>
+        <target>Weight surchage</target>
+      </trans-unit>
+      <trans-unit id="157">
+        <source>dollars per (lb) over</source>
+        <target>dollars (lb) au cours</target>
+      </trans-unit>
+      <trans-unit id="158">
+        <source>lb</source>
+        <target>lb</target>
+      </trans-unit>
+      <trans-unit id="159">
+        <source>Payment options</source>
+        <target>Possibilités de paiement</target>
+      </trans-unit>
+      <trans-unit id="160">
+        <source>delivery details</source>
+        <target>détails de livraison</target>
+      </trans-unit>
+      <trans-unit id="161">
+        <source>delivery_type_tip</source>
+        <target>delivery_type_tip</target>
+      </trans-unit>
+      <trans-unit id="162">
+        <source>service_tip</source>
+        <target>service_tip</target>
+      </trans-unit>
+      <trans-unit id="163">
+        <source>ready_date_tip</source>
+        <target>ready_date_tip</target>
+      </trans-unit>
+      <trans-unit id="164">
+        <source>ready_time_tip</source>
+        <target>ready_time_tip</target>
+      </trans-unit>
+      <trans-unit id="165">
+        <source>expected delivery</source>
+        <target>livraison prévue</target>
+      </trans-unit>
+      <trans-unit id="166">
+        <source>delivered_by_tip</source>
+        <target>delivered_by_tip</target>
+      </trans-unit>
+      <trans-unit id="167">
+        <source>Pickup At</source>
+        <target>Pickup At</target>
+      </trans-unit>
+      <trans-unit id="168">
+        <source>full name or company</source>
+        <target>nom complet ou de la société</target>
+      </trans-unit>
+      <trans-unit id="169">
+        <source>sender_name_tip</source>
+        <target>sender_name_tip</target>
+      </trans-unit>
+      <trans-unit id="170">
+        <source>sender_apt_unit_tip</source>
+        <target>sender_apt_unit_tip</target>
+      </trans-unit>
+      <trans-unit id="171">
+        <source>number</source>
+        <target>Numéro</target>
+      </trans-unit>
+      <trans-unit id="172">
+        <source>sender_street_number_tip</source>
+        <target>sender_street_number_tip</target>
+      </trans-unit>
+      <trans-unit id="173">
+        <source>sender_street_name_tip</source>
+        <target>sender_street_name_tip</target>
+      </trans-unit>
+      <trans-unit id="174">
+        <source>sender_country_tip</source>
+        <target>sender_country_tip</target>
+      </trans-unit>
+      <trans-unit id="175">
+        <source>sender_postal_code_tip</source>
+        <target>sender_postal_code_tip</target>
+      </trans-unit>
+      <trans-unit id="176">
+        <source>sender_city_tip</source>
+        <target>sender_city_tip</target>
+      </trans-unit>
+      <trans-unit id="177">
+        <source>sender_state_province_tip</source>
+        <target>sender_state_province_tip</target>
+      </trans-unit>
+      <trans-unit id="178">
+        <source>sender contact</source>
+        <target>contact expéditeur</target>
+      </trans-unit>
+      <trans-unit id="179">
+        <source>sender_contact_tip</source>
+        <target>sender_contact_tip</target>
+      </trans-unit>
+      <trans-unit id="180">
+        <source>sender phone</source>
+        <target>expéditeur téléphone</target>
+      </trans-unit>
+      <trans-unit id="181">
+        <source>sender_phone_tip</source>
+        <target>sender_phone_tip</target>
+      </trans-unit>
+      <trans-unit id="182">
+        <source>deliver to</source>
+        <target>remettre à</target>
+      </trans-unit>
+      <trans-unit id="183">
+        <source>recep_name_tip</source>
+        <target>recep_name_tip</target>
+      </trans-unit>
+      <trans-unit id="184">
+        <source>recep_apt_unit_tip</source>
+        <target>recep_apt_unit_tip</target>
+      </trans-unit>
+      <trans-unit id="185">
+        <source>recep_street_number_tip</source>
+        <target>recep_street_number_tip</target>
+      </trans-unit>
+      <trans-unit id="186">
+        <source>recep_street_name_tip</source>
+        <target>recep_street_name_tip</target>
+      </trans-unit>
+      <trans-unit id="187">
+        <source>recep_country_tip</source>
+        <target>recep_country_tip</target>
+      </trans-unit>
+      <trans-unit id="188">
+        <source>recep_postal_code_tip</source>
+        <target>recep_postal_code_tip</target>
+      </trans-unit>
+      <trans-unit id="189">
+        <source>recep_city_tip</source>
+        <target>recep_city_tip</target>
+      </trans-unit>
+      <trans-unit id="190">
+        <source>recep_state_province_tip</source>
+        <target>recep_state_province_tip</target>
+      </trans-unit>
+      <trans-unit id="191">
+        <source>recepient contact</source>
+        <target>bénéficiaires de contact</target>
+      </trans-unit>
+      <trans-unit id="192">
+        <source>recep_contact_tip</source>
+        <target>recep_contact_tip</target>
+      </trans-unit>
+      <trans-unit id="193">
+        <source>recepient phone</source>
+        <target>bénéficiaires de téléphone</target>
+      </trans-unit>
+      <trans-unit id="194">
+        <source>recep_phone_tip</source>
+        <target>recep_phone_tip</target>
+      </trans-unit>
+      <trans-unit id="195">
+        <source>package type</source>
+        <target>Type d'emballage</target>
+      </trans-unit>
+      <trans-unit id="196">
+        <source>package_type_tip</source>
+        <target>package_type_tip</target>
+      </trans-unit>
+      <trans-unit id="197">
+        <source>total weight (lb)</source>
+        <target>Poids Total (lb)</target>
+      </trans-unit>
+      <trans-unit id="198">
+        <source>weight_tip</source>
+        <target>weight_tip</target>
+      </trans-unit>
+      <trans-unit id="199">
+        <source># of pieces</source>
+        <target>Nombre de pièces</target>
+      </trans-unit>
+      <trans-unit id="200">
+        <source>num_pieces_tip</source>
+        <target>num_pieces_tip</target>
+      </trans-unit>
+      <trans-unit id="201">
+        <source>reference</source>
+        <target>de référence</target>
+      </trans-unit>
+      <trans-unit id="202">
+        <source>reference_tip</source>
+        <target>reference_tip</target>
+      </trans-unit>
+      <trans-unit id="203">
+        <source>is round trip?</source>
+        <target>est aller-retour?</target>
+      </trans-unit>
+      <trans-unit id="204">
+        <source>round_trip_tip</source>
+        <target>round_trip_tip</target>
+      </trans-unit>
+      <trans-unit id="205">
+        <source>special instructions</source>
+        <target>Instructions spéciales</target>
+      </trans-unit>
+      <trans-unit id="206">
+        <source>special_instructions_tip</source>
+        <target>special_instructions_tip</target>
+      </trans-unit>
+      <trans-unit id="207">
+        <source>Add to shopping cart</source>
+        <target>Ajouter au panier</target>
+      </trans-unit>
+      <trans-unit id="208">
+        <source>Clear fields</source>
+        <target>Clear Fields</target>
+      </trans-unit>
+      <trans-unit id="209">
+        <source>contact information</source>
+        <target>Coordonnées</target>
+      </trans-unit>
+      <trans-unit id="210">
+        <source>reg_name_tip</source>
+        <target>reg_name_tip</target>
+      </trans-unit>
+      <trans-unit id="211">
+        <source>reg_apt_unit_tip</source>
+        <target>reg_apt_unit_tip</target>
+      </trans-unit>
+      <trans-unit id="212">
+        <source>reg_street_number_tip</source>
+        <target>reg_street_number_tip</target>
+      </trans-unit>
+      <trans-unit id="213">
+        <source>reg_street_name_tip</source>
+        <target>reg_street_name_tip</target>
+      </trans-unit>
+      <trans-unit id="214">
+        <source>reg_country_tip</source>
+        <target>reg_country_tip</target>
+      </trans-unit>
+      <trans-unit id="215">
+        <source>reg_postal_code_tip</source>
+        <target>reg_postal_code_tip</target>
+      </trans-unit>
+      <trans-unit id="216">
+        <source>reg_city_tip</source>
+        <target>reg_city_tip</target>
+      </trans-unit>
+      <trans-unit id="217">
+        <source>reg_state_province_tip</source>
+        <target>reg_state_province_tip</target>
+      </trans-unit>
+      <trans-unit id="218">
+        <source>reg_contact_tip</source>
+        <target>reg_contact_tip</target>
+      </trans-unit>
+      <trans-unit id="219">
+        <source>reg_phone_tip</source>
+        <target>reg_phone_tip</target>
+      </trans-unit>
+      <trans-unit id="220">
+        <source>login and information details</source>
+        <target>connexion et des informations de détails</target>
+      </trans-unit>
+      <trans-unit id="221">
+        <source>reg_login_email_tip</source>
+        <target>reg_login_email_tip</target>
+      </trans-unit>
+      <trans-unit id="222">
+        <source>reg_password_tip</source>
+        <target>reg_password_tip</target>
+      </trans-unit>
+      <trans-unit id="223">
+        <source>password repeat</source>
+        <target>Mot de passe Confirmer</target>
+      </trans-unit>
+      <trans-unit id="224">
+        <source>reg_password_repeat_tip</source>
+        <target>reg_password_repeat_tip</target>
+      </trans-unit>
+      <trans-unit id="225">
+        <source>reg_email_tip</source>
+        <target>reg_email_tip</target>
+      </trans-unit>
+      <trans-unit id="226">
+        <source>how did you hear about courier express?</source>
+        <target>Comment avez-vous entendu parler de courrier express?</target>
+      </trans-unit>
+      <trans-unit id="227">
+        <source>reg_how_did_u_hear_tip</source>
+        <target>reg_how_did_u_hear_tip</target>
+      </trans-unit>
+      <trans-unit id="228">
+        <source>payment number or tracking number</source>
+        <target>numéro de paiement ou numéro de suivi</target>
+      </trans-unit>
+      <trans-unit id="229">
+        <source>Get tracking info</source>
+        <target>Obtenir des informations de suivi</target>
+      </trans-unit>
+      <trans-unit id="230">
+        <source>no packages found</source>
+        <target>Aucun forfait trouvé</target>
+      </trans-unit>
+      <trans-unit id="231">
+        <source>order payment code</source>
+        <target>ordre de paiement de code</target>
+      </trans-unit>
+      <trans-unit id="232">
+        <source>package tracking number</source>
+        <target>Numéro de suivi des colis</target>
+      </trans-unit>
+      <trans-unit id="233">
+        <source>from address</source>
+        <target>de l'adresse</target>
+      </trans-unit>
+      <trans-unit id="234">
+        <source>to address</source>
+        <target>à l'adresse</target>
+      </trans-unit>
+      <trans-unit id="235">
+        <source>delivery status</source>
+        <target>Delivery Status</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,3 @@
+all:
+  enable_googleanalyze_me: true
+

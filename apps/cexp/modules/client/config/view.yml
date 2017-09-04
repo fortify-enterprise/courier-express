@@ -1,0 +1,21 @@
+all:
+  stylesheets:
+    - jquery/jquery.firescope_grid.css
+    - jquery/jquery.cluetip.css
+    - content_width.css
+
+  javascripts:
+    - client/client.js
+    - jquery/jquery.firescope_grid.js
+    - jquery/jquery.hoverIntent.js
+    - jquery/jquery.bgiframe.min.js
+    - cluetip_lib/jquery.cluetip.js
+
+  components:
+    left_component:    [left, client]
+
+contact_informationSuccess:
+  has_layout: false
+
+fetch_name_addressSuccess:
+  has_layout: false

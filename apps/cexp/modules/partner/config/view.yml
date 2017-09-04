@@ -1,0 +1,22 @@
+all:
+  stylesheets:
+    - jquery/jquery.firescope_grid.css
+    - jquery/jquery.cluetip.css
+    - content_width.css
+
+  javascripts:
+    - jquery/jquery.firescope_grid.js
+    - jquery/jquery.hoverIntent.js
+    - jquery/jquery.bgiframe.min.js
+    - cluetip_lib/jquery.cluetip.js
+    - partner/partner.js
+
+price_levelSuccess:
+  javascripts:
+    - partner/price_level.js
+
+get_zone_typeSuccess:
+  has_layout: false
+
+get_zone_elementsSuccess:
+  has_layout: false

@@ -1,0 +1,138 @@
+.firescope_grid .sort-asc {
+	background:  url('/images/firescope_grid/sort-asc.png') no-repeat bottom right;
+	cursor: pointer;
+	padding: 0px 4px 2px 2px;	
+}
+.firescope_grid .sort-desc {
+	background:  url('/images/firescope_grid/sort-desc.png') no-repeat bottom right;
+	cursor: pointer;
+	padding: 0px 4px 2px 2px;	
+}
+.firescope_grid .sort-none {
+	background: url('/images/firescope_grid/sort-none.png') no-repeat bottom right;
+	cursor: pointer;
+	padding: 0px 4px 2px 2px;	
+}
+.firescope_grid .sort-sorting {
+	background: url('/images/firescope_grid/load.gif') no-repeat bottom right;
+	cursor: pointer;
+	padding: 0px 4px 2px 2px;		
+}
+
+.firescope_grid .nav-first {
+	background: url('/images/firescope_grid/first.png') no-repeat center center;
+	cursor: pointer;
+	border: 0px;	
+	width: 30px;
+	height: 20px;	
+}
+.firescope_grid .nav-prev {
+	background: url('/images/firescope_grid/prev.png') no-repeat center center;
+	cursor: pointer;
+	border: 0px;	
+	width: 30px;	
+	height: 20px;
+}
+.firescope_grid .nav-next {
+	background: url('/images/firescope_grid/next.png') no-repeat center center;
+	cursor: pointer;
+	border: 0px;
+	width: 30px;
+	height: 20px;
+}
+.firescope_grid .nav-last {
+	background: url('/images/firescope_grid/last.png') no-repeat center center;
+	cursor: pointer;
+	border: 0px;	
+	width: 30px;	
+	height: 20px;
+}
+.firescope_grid .nav-disabled {
+	opacity:0.40;
+	filter:alpha(opacity=40);
+}
+.firescope_grid .nav-reload {
+	background: url('/images/firescope_grid/load.png') no-repeat center center;
+	cursor: pointer;
+	border: 0px;	
+	width: 30px;
+	height: 20px;	
+}
+.firescope_grid .loading {
+	background: url('/images/firescope_grid/load.gif') no-repeat center center;
+	cursor: pointer;
+	border: 0px;
+	width: 30px;
+	height: 20px;		
+}
+.firescope_grid .nav-loading {
+ /*	background-color: #F3F7F3;	 */
+}
+.firescope_grid .grid-split {
+	background: url('/images/firescope_grid/grid-split.gif') no-repeat center center;
+	padding: 0px 6px 2px 6px;
+	width: 10px;	
+}			
+.firescope_grid .nav-toolbar {
+	font-family: Verdana,Helvetica,Geneva;
+	margin-top: 10px;
+}
+.firescope_grid .nav-toolbar select:hover, .firescope_grid .nav-toolbar input:hover, .firescope_grid .nav-toolbar select:focus, .firescope_grid .nav-toolbar input:focus {
+	/*background-color: #FFC;*/
+}
+
+.firescope_grid .nav-rows, .firescope_grid .nav-refresh {
+	text-align: right;
+	border: 1px solid #BCCCE1;
+	margin: 0px 0px 0px 4px;
+	font-family: Verdana,Helvetica,Geneva;	
+}
+.firescope_grid .nav-rows:hover, .firescope_grid .nav-rows:focus {
+	/*background-color: #FFC;*/
+}
+.firescope_grid .nav-page {
+
+}
+.firescope_grid .nav-page-input {
+	text-align: right;
+	width: 25px;
+	padding-bottom: 2px;
+	margin-bottom: 0px;
+	font-family: Verdana,Helvetica,Geneva;		
+}
+.firescope_grid .nav-page-input:hover, .firescope_grid .nav-page-input:focus {
+	/*background-color: #FFC;*/
+}
+.firescope_grid .nav-status {
+
+}
+
+.firescope_grid .filter-active {
+	width: 96%;
+	/*color: #686;*/
+	font-family: Verdana,Helvetica,Geneva;			
+}
+.firescope_grid .filter-inactive {
+	width: 96%;
+	/*color: #AAA;*/
+	font-family: Verdana,Helvetica,Geneva;			
+	background: #E6E4C9;
+}
+.firescope_grid .filter-filtering {
+	background: url('/images/firescope_grid/load.gif') no-repeat center right;
+	/*color: #686;*/
+	/*background-color: #FFF;*/
+}
+
+.firescope_grid .no_results {
+	font-size: 8pt;
+	text-align: center;
+}
+
+.firescope_grid table {
+	width: 700px;
+	border-spacing: 0;
+}
+.firescope_grid table td {
+	border: 1px solid #777;
+}

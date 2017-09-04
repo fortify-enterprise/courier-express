@@ -1,0 +1,5 @@
+all:
+  paypal_username: 'info@courierxpress.ca'
+  paypal_password: 'info@courierxpress.ca'
+  paypal_signature: 'JLKJLKJKJ'
+  paypal_test: 1

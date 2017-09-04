@@ -1,0 +1,3 @@
+default:
+  view_class: sfSmarty
+  partial_view_class: sfSmarty

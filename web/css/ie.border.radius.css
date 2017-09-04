@@ -1,0 +1,5 @@
+/* rounded div */
+div.rounded_div {
+   behavior:url(/css/border_radius.htc); 
+}
+

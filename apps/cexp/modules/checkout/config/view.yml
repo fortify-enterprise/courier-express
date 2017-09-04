@@ -1,0 +1,6 @@
+all:
+  javascripts:
+    - checkout/checkout.js
+
+  components:
+    left_component:    [left, empty]

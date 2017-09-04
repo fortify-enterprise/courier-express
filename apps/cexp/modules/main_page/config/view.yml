@@ -1,0 +1,16 @@
+all:
+  stylesheets:
+    - jquery/jquery.timepicker.css
+    - datepicker.css
+    - main_page/main_page.css
+
+  javascripts:
+    - jquery/jquery.datepicker.js
+    - jquery/jquery.timepicker.js
+    - main_page/main_page.js
+
+autocomplete_address_by_nameSuccess:
+  has_layout: false
+
+executeGet_city_province_from_postalSuccess:
+  has_layout: false

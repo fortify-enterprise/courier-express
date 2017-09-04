@@ -1,0 +1,16 @@
+-
+  name: 'Home page'
+  link: client/index
+-
+  name: 'Track shippment'
+  link: tracking/index
+-
+  name: 'Refund policy'
+  link: legal/refund
+-
+  name: 'Privacy policy'
+  link: legal/privacy
+-
+  name: 'Logout'
+  link: auth/logout
+

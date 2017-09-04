@@ -1,0 +1,7 @@
+pendingSuccess:
+  enabled: false
+  with_layout: false
+
+deliveredSuccess:
+  enabled: false
+  with_layout: false

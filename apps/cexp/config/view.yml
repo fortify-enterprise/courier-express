@@ -1,0 +1,47 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        "Courier Express - Cheapest courier services"
+    description:  "Express delivery FREE quotes and services at the best rates"
+    keywords:     "Courier Delivery Marketplace Cheap Fast Service Everyone Chooses Optimization Best Selection"
+    language:     "en"
+    robots:       "index, follow"
+
+  stylesheets:
+
+    - landing/landing.css
+    - landing/forms.css
+    - landing/buttons.css
+    - landing/default.css
+    - landing/helper.css
+    - landing/dropdown.css
+    - landing/default.ultimate.css
+    - custom-theme/jquery-ui-1.7.2.custom.css
+
+    - jquery/jquery.autocomplete.css
+    - jquery/jquery.validate.css
+    - jquery/jquery.atooltip.css
+    - layout.css
+
+  javascripts:
+
+    - jquery/jquery.min.js
+    - jquery/jquery-ui-1.7.2.custom.min.js
+    - jquery/jquery.align.js
+    - jquery/jquery.autocomplete.js
+    - jquery/jquery.maskedinput-1.2.2.min.js
+    - jquery/jquery.selectboxes.pack.js
+    - jquery/jquery.atooltip.js
+    - courier_express.js
+
+
+  has_layout:     true
+  layout:         layout
+
+  components:
+     header_component:  [layout, header]
+     footer_component:  [layout, footer]
+     left_component:    [layout, left]
+     menu_component:    [layout, menu]

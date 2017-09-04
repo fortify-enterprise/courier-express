@@ -1,0 +1,225 @@
+/*@font-face {
+  font-family: PragmaticaC-Bold;
+  src: url('/fonts/PragmaticaC-Bold.otf');
+}
+
+@font-face {
+  font-family: PragmaticaC-BoldItalic;
+  src: url('/fonts/PragmaticaC-BoldItalic.otf');
+}
+
+@font-face {
+  font-family: PragmaticaC-Italic;
+  src: url('/fonts/PragmaticaC-Italic.otf');
+}
+*/
+@font-face {
+  font-family: PragmaticaC;
+  src: url('/fonts/PragmaticaC.otf');
+}
+/*
+@font-face {
+  font-family: PragmaticaCondC-Bold;
+  src: url('/fonts/PragmaticaCondC-Bold.otf');
+}
+
+@font-face {
+  font-family: PragmaticaCondC; 
+  src: url('/fonts/PragmaticaCondC.otf');
+}
+
+@font-face {
+  font-family: PragmaticaLightC-Bold;
+  src: url('/fonts/PragmaticaLightC-Bold.otf');
+}
+
+@font-face {
+  font-family: PragmaticaLightC;
+  src: url('/fonts/PragmaticaLightC.otf');
+}
+
+@font-face {
+  font-family: PragmaticaShadowC-Italic;
+  src: url('/fonts/PragmaticaShadowC-Italic.otf');
+}
+
+@font-face {
+  font-family: PragmaticaShadowC;
+  src: url('/fonts/PragmaticaShadowC.otf');
+}
+
+@font-face {
+  font-family: Webdings;
+  src: url('/fonts/Webdings.ttf');
+}
+*/
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: PragmaticaC, Arial, Hevetica, Sans-serif;
+	text-align: center;
+	color: #333333;
+	background-color: #f2f2f2;
+}
+
+a
+{
+	color: #993333;
+}
+
+a:visited {
+  color: #993333;
+}
+
+a:hover, a:active
+{
+	color: #ffffff;
+	background-color: #993333;
+}
+
+
+h2
+{
+	color: #B52C07;
+	font: 120% georgia, times, "times new roman", serif;
+	font-weight: bold;
+	margin: 0 0 2px 0;
+}
+
+h2 a { text-decoration: none; }
+
+h3
+{
+	color: #5B5E0E;
+	font: 106% georgia, times, "times new roman", serif;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+#container
+{
+	margin: 1em auto;
+	width: 1024px;
+	text-align: left;
+	background-color: #ffffff;
+	border: 1px none #ffffff;
+	height: auto;
+}
+
+#header
+{
+	height: 45px;
+	width: 100%;
+	/*background-image: url(header.jpg);*/
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	border-bottom: 1px solid #fff;
+	position: relative;
+	border: 1px none #fff;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 75px
+}
+
+#header h1
+{
+	font-size: 1px;
+	text-align: right;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+
+#menu
+{
+	float: right;
+	width: 165px;
+	border-left: 1px solid #C5C877;
+	padding-left: 15px;
+}
+
+#contents {
+margin-left: auto; width: 900px;
+}
+#contents p { line-height: 165%; }
+.blogentry { border-bottom: 1px solid #C5C877; }
+.imagefloat { float: right; }
+
+#footer
+{
+	clear: both;
+	color: #272900;
+	font-size: 90%;
+}
+
+#skipmenu
+{
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 645px;
+	text-align: right;
+}
+
+#skipmenu a
+{
+	color: #666;
+	text-decoration: none;
+}
+
+#skipmenu a:hover
+{
+	color: #fff;
+	background-color: #666;
+	text-decoration: none;
+}
+
+
+.top_link a:link  {
+  color: #ffffff;
+	text-decoration: none;
+}
+
+.top_link a:active  {
+  color: #ffffff;
+	text-decoration: none;
+}
+
+div div span a.top_link:visited {
+  color: #ffffff;
+}
+
+.pretty-hover {
+  cursor: pointer;
+}
+
+.large-header {
+  font-family: Arial, PragmaticaC;
+	font-size: 15pt;
+	color: #993333;
+}
+
+.small-header {
+  font-family: Arial, PragmaticaC;
+	font-size: 12pt;
+	color: #993333;
+}
+
+.point-text {
+  font-family: PragmaticaC;
+	font-size: 14pt;
+}
+
+.check-mark {
+	font-size: x-large;
+	color: #6c7bb0;
+}
+
+.point-block {
+  float: left;
+	margin-right: 0.3em;
+	padding: 0.4em;
+}
+

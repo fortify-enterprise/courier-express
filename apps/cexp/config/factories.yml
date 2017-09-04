@@ -1,0 +1,135 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/05-Factories
+
+
+prod:
+  logger:
+    class:   sfAggregateLogger
+    param:
+      level:  debug
+
+
+#  response:
+#    class: sfWebResponse
+#    param:
+#      send_http_headers: false
+
+  routing:
+    class: sfPatternRouting
+    param:
+      generate_shortest_url:            true
+      extra_parameters_as_query_string: true
+
+
+
+  user:
+    class: sessionUser                                 # customize the default sfUser
+    param:
+      timeout:         1800
+      logging:         %SF_LOGGING_ENABLED%
+      use_flash:       true
+      default_culture: %SF_DEFAULT_CULTURE%
+
+  mailer:
+    class: sfMailer
+    param:
+      logging:           %SF_LOGGING_ENABLED%
+      charset:           %SF_CHARSET%
+      delivery_strategy: spool
+      spool_class:       Swift_FileSpool
+      spool_arguments:   [ %SF_DATA_DIR%/emails ]
+      transport:
+        class: Swift_SmtpTransport
+        param:
+          host:       smtp.courierexpress.ca
+          port:       587
+          username:   noreply@courierexpress.ca
+          password:   noreply*.c
+
+  i18n:
+    class: sfI18N
+    param:
+      source:               XLIFF
+      debug:                false
+      untranslated_prefix:  "[T]"
+      untranslated_suffix:  "[/T]"
+      cache:
+        class: sfMemcacheCache
+        param:
+          lifetime:   86400
+          automatic_cleaning_factor: 0
+          prefix:     %SF_APP_DIR%/i18n
+          cache_dir:  %SF_I18N_CACHE_DIR%
+          servers:
+            server_01:
+              host: localhost
+              post: 11211
+
+
+
+dev:
+
+all:
+  routing:
+    class: sfPatternRouting
+    param:
+      generate_shortest_url:            true
+      extra_parameters_as_query_string: true
+
+#  view_cache_manager:
+#    class: sfMemcacheCache
+#    param:
+#      lifetime: 86400
+#      prefix:   %SF_APP_DIR%/template
+#      servers:
+#        server_01:
+#          host: localhost
+#          post: 11211
+
+#    class: sfViewCacheManager
+#    param:
+#      cache_key_use_vary_headers: true
+#      cache_key_use_host_name:    true
+
+  mailer:
+    class: sfMailer
+    param:
+      logging:           %SF_LOGGING_ENABLED%
+      charset:           %SF_CHARSET%
+      delivery_strategy: spool
+      spool_class:       Swift_FileSpool
+      spool_arguments:   [ %SF_DATA_DIR%/emails ]
+      transport:
+        class: Swift_SmtpTransport
+        param:
+          host:       smtp.courierexpress.ca
+          port:       587
+          username:   noreply@courierexpress.ca
+          password:   noreply*.c
+
+  i18n:
+    class: sfI18N
+    param:
+      source:               XLIFF
+      debug:                false
+      untranslated_prefix:  "[T]"
+      untranslated_suffix:  "[/T]"
+      cache:
+        class: sfMemcacheCache
+        param:
+          lifetime:   86400
+          automatic_cleaning_factor: 0
+          prefix:     %SF_APP_DIR%/i18n
+          cache_dir:  %SF_I18N_CACHE_DIR%
+          servers:
+            server_01:
+              host: localhost
+              post: 11211
+
+  user:
+    class: sessionUser                                 # customize the default sfUser
+    param:
+      timeout:         1800
+      logging:         %SF_LOGGING_ENABLED%
+      use_flash:       true
+      default_culture: %SF_DEFAULT_CULTURE%
