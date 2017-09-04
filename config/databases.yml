@@ -4,7 +4,7 @@ all:
     param:
       dsn: 'mysql:host=localhost;dbname=courier_express_prod;unix_socket=/var/run/mysqld/mysqld.sock'
       username: courier_express
-      password: '^&*courier***'
+      password: ''
       attributes:
         quote_identifier: true
 
@@ -14,7 +14,7 @@ dev:
     param:
       dsn: 'mysql:host=localhost;dbname=courier_express_prod;unix_socket=/var/run/mysqld/mysqld.sock'
       username: courier_express
-      password: '^&*courier***'
+      password: ''
       attributes:
         quote_identifier: true
 
